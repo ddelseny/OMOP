@@ -21,6 +21,7 @@ En cours de développement...
 ## Installation de Usagi
 * Pré requis : java 1.8 ou plus
 * Dans la section Assets de la page [https://github.com/OHDSI/Usagi/releases](https://github.com/OHDSI/Usagi/releases)
+![usagi5.png](usagi5.png)
 * Télécharger Usagi_v*.jar et copier ce fichier sous le chemin de votre choix dans un répertoire que vous devez créer, nommé Usagi. Exemple de chemin : C:\Usagi
 * Entrer votre nom et cliquer sur remember me
 
@@ -36,9 +37,9 @@ En cours de développement...
 *	Cliquer sur Select folder puis sur Build index
 
 ![usagi9.png](usagi9.png)
-* Cliquer sur Select folder et cliquer sur Build index 
 
 ![usagi10.png](usagi10.png)
+
 La construction de l’index prend plusieurs minutes…
 
 ![usagi11.png](usagi11.png)
@@ -66,36 +67,40 @@ Exemple de fichier Excel pour l'import :
 
 ![usagi15.png](usagi15.png)
 *	Dans la section Column mapping (en bas à gauche), faire correspondre les colonnes du fichier Excel avec celles attendues : 
-  +	source name column => libellé source en anglais
-  +	source frequency column => nb de fois que ce libellé est observé dans la table
-  +	Additional info column => libellé en français
-  +	Laisser Filter standard concepts, Include source domain actifs
-  +	Ajouter Filter by domain et choisir le domaine de destination 
-    -	Ex : Specimen, Spec disease status, Spec anatomic site, etc.
-
-![usagi15.png](usagi15.png)
-NB : Si certaines colonnes ne sont pas visibles, utiliser l’ascenseur 
+    +	source name column => libellé source en anglais
+    +	source frequency column => nb de fois que ce libellé est observé dans la table
+    +	Additional info column => libellé en français
+    +	Laisser "Filter standard concepts" et "Include source domain" actifs
+    +	Option 1 : Ajouter Filter by domain et choisir le domaine de destination 
+      Ex : Specimen, Spec disease status, Spec anatomic site, etc.
+    + Option 2 : Ajouter Filter by vocabulary et choisir le vocabulaire de destination
+      Ex : Loinc
 
 ![usagi16.png](usagi16.png)
 
-* Cliquer sur import 
+NB : Si certaines colonnes ne sont pas visibles, utiliser l’ascenseur 
 
 ![usagi17.png](usagi17.png)
+
+* Cliquer sur import 
+
+![usagi18.png](usagi18.png)
 
 Cela prend quelques minutes.
 
 * L’interface obtenue se divise en trois panneaux:
   + Vue de la table
 
-![usagi18.png](usagi18.png)
+![usagi19.png](usagi19.png)
   + Vue des mappings sélectionnés 
 
-![usagi19.png](usagi19.png)
+![usagi20.png](usagi20.png)
   + Vue de la recherche
 
-![usagi20.png](usagi20.png)
-    - Laisser Filter standard concepts et Include source terms  actifs
-     - Ajouter filter by domain (filtrer sur le domaine choisi lors de l’import) 
+![usagi20bis.png](usagi20bis.png)
+  - Laisser Filter standard concepts et Include source terms  actifs
+   
+  - Ajouter filter by domain (filtrer sur le domaine choisi lors de l’import) 
 
 Dans l’exemple ci-dessous si le filtre sur le domaine spec disease status est activé, nous obtenons trois propositions :
 ![usagi21.png](usagi21.png)
@@ -129,19 +134,20 @@ NB : Penser à changer l’attribut sur la prochaine ligne
 ![usagi26.png](usagi26.png)
 
 * Continuer le mapping : seules les lignes approuvées seront exportées 
+
 NB :  si pour un libellé source, il n’existe pas de correspondance, la ligne est signalée par un drapeau, elle ne sera pas exportée.
 
 ## Export des résultats
 
 * Dans le menu File, cliquer sur Export source to concept map
 
-![usagi27.png](usagi27.png)
+![usagi29.png](usagi29.png)
 
 ATTENTION IMPORTANT : choisir "Only approved" pour n’exporter que le mapping approuvé
 
 Export for review
 
-![usagi28.png](usagi28.png)
+![usagi30.png](usagi30.png)
 
 *	Choisir un id pour le vocabulaire :
 L’id doit être court et peut comporter des espaces
@@ -150,11 +156,11 @@ L’id doit être court et peut comporter des espaces
 « Chu Spec Anat » pour le domaine spec anatomic site
 « Chu Spec Disease » pour le domaine spec disease status
 
-![usagi29.png](usagi29.png)
+![usagi31.png](usagi31.png)
 * Nommer le fichier résultat en précisant le domaine cible :
 Ex : MPTL_CHU_SPEC_DISEASE pour le domaine spec disease status
 
-![usagi30.png](usagi30.png)
+![usagi32.png](usagi32.png)
 
 
 -------------------------- SECTION EN COURS DE DEV--------------------------
