@@ -7,9 +7,9 @@ En cours de développement...
 [https://athena.ohdsi.org/auth/register](https://athena.ohdsi.org/auth/register)
 * Dans la section Download (menu vert) : se loguer et sélectionner les vocabulaires de destination à télécharger. Ex : Loinc, Specimen type, Snomed, etc.
 
-![athenaInterface.png](images/athenaInterface.png)
+![athenaInterface.png](images/athenaInterface.PNG)
 * Cliquer sur Download vocabularies
-![athenaDownloadSummary.png](images/athenaDownloadSummary.png)
+![athenaDownloadSummary.png](images/athenaDownloadSummary.PNG)
 * Nommer le fichier et s'assurer que la version du CDM est 5.x
 * Sélectionner ou non la case de notification pour être informé par email de mises à jour des vocabulaires sélectionnés puis cliquer sur Download.
 
@@ -48,8 +48,9 @@ La construction de l’index prend plusieurs minutes…
 ![usagi12.png](images/usagi12.png)
 
 ## Préparation des données à mapper
+Le fichier importé doit comporter au moins les colonnes contenant le code source et une description du code source en anglais, mais des informations supplémentaires sur les codes peuvent également être importées (par exemple, l'unité de dose, la description en français, la fréquence des codes). 
 * Dans un fichier Excel, organiser les données de la façon suivante :
-  + Une colonne pour les codes (si présents)
+  + Une colonne pour les codes 
   + Une colonne pour les libellés en français que l’on cherche à mapper
   + Une colonne pour la traduction de ces libellés (utiliser deepl ou google translate)
   + Une colonne pour les fréquences
@@ -107,12 +108,12 @@ Dans l’exemple ci-dessous si le filtre sur le domaine spec disease status est 
 
   - L’option Query permet une recherche personnalisée
   - Avec l’option Use source term choisi par défaut, USAGI liste des propositions de mapping dans l’encart Results.
-  - Sélectionner une des lignes proposées et cliquer sur « add concept» ou « replace concept » pour ajouter ou remplacer un concept dans la vue des mappings sélectionnés. Il est possible de garder plusieurs concepts dans cette vue pour une révision future.
-  - Il est possible de mettre un drapeau ou d’approuver directement une proposition de mapping. 
+  - Sélectionner une des lignes proposées et cliquer sur « add concept» ou « replace concept » pour ajouter ou remplacer un concept dans la vue des mappings sélectionnés. *Il est possible d'avoir plusieurs concepts destinataires pour un même concept source*.
+  - Il est possible de mettre un drapeau ou d’approuver directement la proposition de mapping. 
   - L’utilisation des attributs EQUAL, EQUIVALENT, ETC. est optionnelle et ne sert qu’à commenter le fichier de travail (ces attributs n’apparaitront plus dans le fichier final exporté)
 ![usagi22.png](images/usagi22.png)
 
-* Une fois approuvée ou signalée par un drapeau, la proposition est mise à jour dans la vue de la table et la ligne suivante est chargée.
+* Une fois approuvée ou signalée par un drapeau, *tous les mappings de la vue des mappings sélectionnés* sont associés au code source et la ligne suivante est chargée.
 
 Après signalement par un drapeau, les lignes dans la vue de la table sont écrites en rouge. Après approbation, elles sont surlignées en vert :
 ![usagi23.png](images/usagi23.png)
