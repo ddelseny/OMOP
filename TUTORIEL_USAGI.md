@@ -7,9 +7,9 @@ En cours de développement...
 [https://athena.ohdsi.org/auth/register](https://athena.ohdsi.org/auth/register)
 * Dans la section Download (menu vert) : se loguer et sélectionner les vocabulaires de destination à télécharger. Ex : Loinc, Specimen type, Snomed, etc.
 
-![athenaInterface.png](images/athenaInterface.png)
+![athenaInterface.png](images/athenaInterface.PNG)
 * Cliquer sur Download vocabularies
-![athenaDownloadSummary.png](images/athenaDownloadSummary.png)
+![athenaDownloadSummary.png](images/athenaDownloadSummary.PNG)
 * Nommer le fichier et s'assurer que la version du CDM est 5.x
 * Sélectionner ou non la case de notification pour être informé par email de mises à jour des vocabulaires sélectionnés puis cliquer sur Download.
 
@@ -48,8 +48,9 @@ La construction de l’index prend plusieurs minutes…
 ![usagi12.png](images/usagi12.png)
 
 ## Préparation des données à mapper
+Le fichier importé doit comporter au moins les colonnes contenant le code source et une description du code source en anglais, mais des informations supplémentaires sur les codes peuvent également être importées (par exemple, l'unité de dose, la description en français, la fréquence des codes). 
 * Dans un fichier Excel, organiser les données de la façon suivante :
-  + Une colonne pour les codes (si présents)
+  + Une colonne pour les codes 
   + Une colonne pour les libellés en français que l’on cherche à mapper
   + Une colonne pour la traduction de ces libellés (utiliser deepl ou google translate)
   + Une colonne pour les fréquences
