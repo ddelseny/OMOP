@@ -19,7 +19,7 @@ En cours de développement...
 
 ![vocab4.png](images/vocab4.png)
 ## Installation de Usagi
-* Pré requis : java 1.8 ou plus
+* Pré requis : java 1.8 ou plus. Pour les ordis du CHU : appeler le 13 si version plus ancienne (C:\Program Files (x86)\Java). Pour un ordinateur personnel, suivre les instructions de la rubrique **Options de mise à jour de Java** de [https://www.java.com/fr/download/help/java_update.html(https://www.java.com/fr/download/help/java_update.html)
 * Dans la section Assets de la page [https://github.com/OHDSI/Usagi/releases](https://github.com/OHDSI/Usagi/releases)
 ![usagi5.png](images/usagi5.png)
 * Télécharger Usagi_v*.jar et copier ce fichier sous le chemin de votre choix dans un répertoire que vous devez créer, nommé Usagi. Exemple de chemin : C:\Usagi
