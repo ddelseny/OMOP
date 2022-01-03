@@ -5,7 +5,7 @@ En cours de développement...
 * Créer un compte sur le site Athena : 
 
 [https://athena.ohdsi.org/auth/register](https://athena.ohdsi.org/auth/register)
-* Dans la section Download (menu vert) : se loguer et sélectionner les vocabulaires de destination à télécharger. Ex : Loinc, Specimen type, Snomed, etc.
+* Dans la section Download (menu vert) : se loguer et sélectionner les vocabulaires de destination à télécharger. Ex : Loinc, RxNorm, Snomed, etc.
 
 ![athenaInterface.png](images/athenaInterface.PNG)
 * Cliquer sur Download vocabularies
@@ -68,55 +68,52 @@ Exemple de fichier Excel pour l'import :
 
 ![usagi15.png](images/usagi15.png)
 *	Dans la section Column mapping (en bas à gauche), faire correspondre les colonnes du fichier Excel avec celles attendues : 
+    +	source code column => codes
     +	source name column => libellé source en anglais
     +	source frequency column => nb de fois que ce libellé est observé dans la table
     +	Additional info column => libellé en français
     +	Laisser "Filter standard concepts" et "Include source domain" actifs
     +	Option 1 : Ajouter Filter by domain et choisir le domaine de destination 
-      Ex : Specimen, Spec disease status, Spec anatomic site, etc.
+      Ex : Drug, Measurment, Specimen, Spec disease status, Spec anatomic site, etc.
     + Option 2 : Ajouter Filter by vocabulary et choisir le vocabulaire de destination
-      Ex : Loinc
+      Ex : RxNorm, Loinc, etc.
 
-![usagi16.png](images/usagi16.png)
+![usagi16bio.png](images/usagi16bio.png)
 
 NB : Si certaines colonnes ne sont pas visibles, utiliser l’ascenseur 
 
-![usagi17.png](images/usagi17.png)
-
 * Cliquer sur import 
-
-![usagi18.png](images/usagi18.png)
 
 Cela prend quelques minutes.
 
 * L’interface obtenue se divise en trois panneaux:
   + Vue de la table
 
-![usagi19.png](images/usagi19.png)
+![usagi19bio.png](images/usagi19bio.png)
   + Vue des mappings sélectionnés 
+Liste un ou plusieurs transcodages (une ou plusieurs lignes) possibles pour un même code source
 
-![usagi20.png](images/usagi20.png)
+![usagi20bio.png](images/usagi20bio.PNG)
   + Vue de la recherche
 
-![usagi20bis.png](images/usagi20bis.png)
+![usagi20bisbio.png](images/usagi20bisbio.PNG)
   - Laisser Filter standard concepts et Include source terms  actifs
    
   - Ajouter filter by domain (filtrer sur le domaine choisi lors de l’import) 
 
-Dans l’exemple ci-dessous si le filtre sur le domaine spec disease status est activé, nous obtenons trois propositions :
-![usagi21.png](images/usagi21.png)
+Dans l’exemple ci-dessous les filtres sur le domaine **measurement** et le vocabulaire **Loinc** sont activés, nous obtenons plusieurs propositions :
+![usagi21bio.png](images/usagi21bio.png)
 
   - L’option Query permet une recherche personnalisée
-  - Avec l’option Use source term choisi par défaut, USAGI liste des propositions de mapping dans l’encart Results.
-  - Sélectionner une des lignes proposées et cliquer sur « add concept» ou « replace concept » pour ajouter ou remplacer un concept dans la vue des mappings sélectionnés. *Il est possible d'avoir plusieurs concepts destinataires pour un même concept source*.
-  - Il est possible de mettre un drapeau ou d’approuver directement la proposition de mapping. 
+  - Avec l’option Use source term choisi par défaut, USAGI liste des propositions de mapping dans l’encart Results : sélectionner une des lignes proposées et cliquer sur « add concept» ou « replace concept » pour ajouter ou remplacer un concept dans la vue des mappings sélectionnés. **Il est possible d'avoir plusieurs concepts destinataires pour un même concept source**.
+  - Une fois les concepts de destination choisis dans la vue **Target concepts** Il est possible d’approuver le mapping ou de le signaler comme non approuvé en cliquant sur **Flag** 
+  
   - L’utilisation des attributs EQUAL, EQUIVALENT, ETC. est optionnelle et ne sert qu’à commenter le fichier de travail (ces attributs n’apparaitront plus dans le fichier final exporté)
-![usagi22.png](images/usagi22.png)
+![usagi22bio.png](images/usagi22bio.png)
 
-* Une fois approuvée ou signalée par un drapeau, *tous les mappings de la vue des mappings sélectionnés* sont associés au code source et la ligne suivante est chargée.
+* Une fois approuvée **tous les mappings de la vue des mappings sélectionnés* sont associés au code source, la ligne dans la vue de la table est surlignée en vert et la ligne suivante est chargée.** De même si la ligne est signalée par un drapeau, la ligne est surlignée en rouge et la ligne suicante est chargée.
 
-Après signalement par un drapeau, les lignes dans la vue de la table sont écrites en rouge. Après approbation, elles sont surlignées en vert :
-![usagi23.png](images/usagi23.png)
+![usagi23bio.png](images/usagi23bio.png)
 
 * Si aucune proposition ne convient : signaler la ligne par un drapeau => ne pas approuver, ajouter UNMATCHED si besoin (ou autres options utiles pour ce fichier de travail)
 
@@ -153,6 +150,7 @@ Export for review
 *	Choisir un id pour le vocabulaire :
 L’id doit être court et peut comporter des espaces
  ex : 
+« Chu Bio » pour la bio
 « Chu Spec » pour le domaine specimen
 « Chu Spec Anat » pour le domaine spec anatomic site
 « Chu Spec Disease » pour le domaine spec disease status
@@ -167,7 +165,7 @@ Ex : MPTL_CHU_SPEC_DISEASE pour le domaine spec disease status
 -------------------------- SECTION EN COURS DE DEV--------------------------
 ##	Mise à jour du vocabulaire
 1.	Télécharger les nouveaux fichiers de vocabulaire depuis Athena
-2.	Reconstruiser l'index Usagi (Aide -> Reconstruire l'index).
+2.	Reconstruire l'index Usagi (Aide -> Reconstruire l'index).
 3.	Ouvrer le fichier de mapping
 4.	Identifier les codes qui correspondent à des concepts qui, dans la nouvelle version du vocabulaire, ne sont plus des concepts standard, et trouver des concepts cibles plus appropriés.
 
