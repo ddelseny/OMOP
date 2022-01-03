@@ -108,12 +108,12 @@ Dans l’exemple ci-dessous si le filtre sur le domaine spec disease status est 
 
   - L’option Query permet une recherche personnalisée
   - Avec l’option Use source term choisi par défaut, USAGI liste des propositions de mapping dans l’encart Results.
-  - Sélectionner une des lignes proposées et cliquer sur « add concept» ou « replace concept » pour ajouter ou remplacer un concept dans la vue des mappings sélectionnés. Il est possible de garder plusieurs concepts dans cette vue pour une révision future.
-  - Il est possible de mettre un drapeau ou d’approuver directement une proposition de mapping. 
+  - Sélectionner une des lignes proposées et cliquer sur « add concept» ou « replace concept » pour ajouter ou remplacer un concept dans la vue des mappings sélectionnés. *Il est possible d'avoir plusieurs concepts destinataires pour un même concept source*.
+  - Il est possible de mettre un drapeau ou d’approuver directement la proposition de mapping. 
   - L’utilisation des attributs EQUAL, EQUIVALENT, ETC. est optionnelle et ne sert qu’à commenter le fichier de travail (ces attributs n’apparaitront plus dans le fichier final exporté)
 ![usagi22.png](images/usagi22.png)
 
-* Une fois approuvée ou signalée par un drapeau, la proposition est mise à jour dans la vue de la table et la ligne suivante est chargée.
+* Une fois approuvée ou signalée par un drapeau, *tous les mappings de la vue des mappings sélectionnés* sont associés au code source et la ligne suivante est chargée.
 
 Après signalement par un drapeau, les lignes dans la vue de la table sont écrites en rouge. Après approbation, elles sont surlignées en vert :
 ![usagi23.png](images/usagi23.png)
