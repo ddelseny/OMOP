@@ -19,7 +19,9 @@ En cours de développement...
 
 ![vocab4.png](images/vocab4.png)
 ## Installation de Usagi
-* Pré requis : java 1.8 ou plus. Pour les ordis du CHU : appeler le 13 si version plus ancienne (C:\Program Files (x86)\Java). Pour un ordinateur personnel, suivre les instructions de la rubrique **Options de mise à jour de Java** de [https://www.java.com/fr/download/help/java_update.html(https://www.java.com/fr/download/help/java_update.html)
+* Pré requis : java 1.8 ou plus. 
+  + Pour les ordis du CHU : appeler le 13 (?) si version plus ancienne (vérifier la version installée sous C:\Program Files (x86)\Java) 
+  + Pour un ordinateur personnel, si besoin, suivre les instructions de la rubrique **Options de mise à jour de Java** sur [https://www.java.com/fr/download/help/java_update.html](https://www.java.com/fr/download/help/java_update.html)
 * Dans la section Assets de la page [https://github.com/OHDSI/Usagi/releases](https://github.com/OHDSI/Usagi/releases)
 ![usagi5.png](images/usagi5.png)
 * Télécharger Usagi_v*.jar et copier ce fichier sous le chemin de votre choix dans un répertoire que vous devez créer, nommé Usagi. Exemple de chemin : C:\Usagi
@@ -101,12 +103,14 @@ L’interface obtenue se divise en trois panneaux:
     + L’option Query permet une recherche personnalisée
 Avec l’option "Use source term" choisi par défaut, USAGI liste des propositions de mapping dans l’encart Results : sélectionner une des lignes proposées et cliquer sur « add concept» ou « replace concept » pour ajouter ou remplacer un concept dans la vue des mappings sélectionnés. **Il est possible d'avoir plusieurs concepts destinataires pour un même concept source**.
 * Une fois les concepts de destination choisis dans la vue **Target concepts**, vous pouvez cliquer sur  ALT + C pour obtenir plus d'information sur le concept (hierarchie). 
-* Tout en bas de la page, valider le mapping en cliquant sur **Approve** ou bien signaler ce mapping comme non approuvé en cliquant sur **Flag**.  
+* Tout en bas de la page, valider le mapping en cliquant sur **Approve** ou bien signaler ce mapping comme non approuvé en cliquant sur **Flag**. 
 * L’utilisation des attributs EQUAL, EQUIVALENT, ETC. est optionnelle et ne sert qu’à commenter le fichier de travail (ces attributs n’apparaitront plus dans le fichier final exporté)
 
 ![usagi22bio.png](images/usagi22.png)
 
   + Une fois le mapping approuvé tous les **target concepts** sont associés au code source : la ligne dans la **vue de la table** est surlignée en vert et la ligne suivante est chargée.** De même si la ligne est signalée par un drapeau, la ligne est surlignée en rouge et la ligne suivante est chargée.
+
+NB : Lors de l'export, si un code source a plusieurs codes de destination, il y aura autant de lignes dans le fichier exporté que de codes de destination bien que ces lignes n'apparaissent pas par défaut dans la vue de la table après validation. 
 
 ![usagi23bio.png](images/usagi23bio.png)
 
