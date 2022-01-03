@@ -86,32 +86,26 @@ NB : Si certaines colonnes ne sont pas visibles, utiliser l’ascenseur
 
 Cela prend quelques minutes.
 
-* L’interface obtenue se divise en trois panneaux:
-  + Vue de la table
+L’interface obtenue se divise en trois panneaux:
+  * Vue de la table
 
 ![usagi19bio.png](images/usagi19bio.png)
-  + Vue des mappings sélectionnés 
-Liste un ou plusieurs transcodages (une ou plusieurs lignes) possibles pour un même code source
+ * Vue des mappings sélectionnés : liste un ou plusieurs **Target concepts** (une ou plusieurs lignes) possibles pour un même code source
 
-![usagi20bio.png](images/usagi20bio.PNG)
-  + Vue de la recherche
-
-![usagi20bisbio.png](images/usagi20bisbio.PNG)
-  - Laisser Filter standard concepts et Include source terms  actifs
-   
-  - Ajouter filter by domain (filtrer sur le domaine choisi lors de l’import) 
-
-Dans l’exemple ci-dessous les filtres sur le domaine **measurement** et le vocabulaire **Loinc** sont activés, nous obtenons plusieurs propositions :
+![usagi20bio.png](images/usagi20bio.png)
+  * Vue de la recherche
+![usagi20bisbio.png](images/usagi20bisbio.png)
+    + Pour rechercher un concept de destination : laisser Filter standard concepts et Include source terms  actifs et ajouter les filtres (filtrer sur le domaine/vocab choisi lors de l’import). Dans l’exemple ci-dessous les filtres sur le domaine **measurement** et le vocabulaire **Loinc** sont activés, nous obtenons plusieurs propositions :
 ![usagi21bio.png](images/usagi21bio.png)
 
-  - L’option Query permet une recherche personnalisée
-  - Avec l’option Use source term choisi par défaut, USAGI liste des propositions de mapping dans l’encart Results : sélectionner une des lignes proposées et cliquer sur « add concept» ou « replace concept » pour ajouter ou remplacer un concept dans la vue des mappings sélectionnés. **Il est possible d'avoir plusieurs concepts destinataires pour un même concept source**.
-  - Une fois les concepts de destination choisis dans la vue **Target concepts** Il est possible d’approuver le mapping ou de le signaler comme non approuvé en cliquant sur **Flag** 
-  
-  - L’utilisation des attributs EQUAL, EQUIVALENT, ETC. est optionnelle et ne sert qu’à commenter le fichier de travail (ces attributs n’apparaitront plus dans le fichier final exporté)
-![usagi22bio.png](images/usagi22bio.png)
+    + L’option Query permet une recherche personnalisée
+Avec l’option "Use source term" choisi par défaut, USAGI liste des propositions de mapping dans l’encart Results : sélectionner une des lignes proposées et cliquer sur « add concept» ou « replace concept » pour ajouter ou remplacer un concept dans la vue des mappings sélectionnés. **Il est possible d'avoir plusieurs concepts destinataires pour un même concept source**.
+* Une fois les concepts de destination choisis dans la vue **Target concepts**. Il est possible d’approuver le mapping ou bien de le signaler comme non approuvé en cliquant sur **Flag**  
+* L’utilisation des attributs EQUAL, EQUIVALENT, ETC. est optionnelle et ne sert qu’à commenter le fichier de travail (ces attributs n’apparaitront plus dans le fichier final exporté)
 
-* Une fois approuvée **tous les mappings de la vue des mappings sélectionnés* sont associés au code source, la ligne dans la vue de la table est surlignée en vert et la ligne suivante est chargée.** De même si la ligne est signalée par un drapeau, la ligne est surlignée en rouge et la ligne suicante est chargée.
+![usagi22bio.png](images/usagi22.png)
+
+  + Une fois le mapping approuvé tous les **target concepts** sont associés au code source : la ligne dans la **vue de la table** est surlignée en vert et la ligne suivante est chargée.** De même si la ligne est signalée par un drapeau, la ligne est surlignée en rouge et la ligne suivante est chargée.
 
 ![usagi23bio.png](images/usagi23bio.png)
 
@@ -120,6 +114,7 @@ Dans l’exemple ci-dessous les filtres sur le domaine **measurement** et le voc
 ![usagi24.png](images/usagi24.png)
 
 NB : Penser à changer l’attribut sur la prochaine ligne 
+
 *	Il est possible de sauver ce document de travail afin d’y revenir plus tard 
 
 ![usagi25.png](images/usagi25.png)
@@ -127,7 +122,7 @@ NB : Penser à changer l’attribut sur la prochaine ligne
 ## Reprendre un mapping en cours
 
 * Relancer USAGI (fichier jar)
-* Cliquer sur File >> Open
+* Cliquer sur File >> Open 
 
 ![usagi26.png](images/usagi26.png)
 
