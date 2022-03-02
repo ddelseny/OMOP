@@ -99,9 +99,10 @@ L’interface obtenue se divise en trois panneaux:
 ![usagi20bisbio.png](images/usagi20bisbio.png)
     + Pour rechercher un concept de destination : laisser Filter standard concepts et Include source terms  actifs et ajouter les filtres (filtrer sur le domaine/vocab choisi lors de l’import). Dans l’exemple ci-dessous les filtres sur le domaine **measurement** et le vocabulaire **Loinc** sont activés, nous obtenons plusieurs propositions :
 ![usagi21bio.png](images/usagi21bio.png)
++ Si aucune proposition n'apparait, utiliser cocher l'option Query
 
     + L’option Query permet une recherche personnalisée
-Avec l’option "Use source term" choisi par défaut, USAGI liste des propositions de mapping dans l’encart Results : sélectionner une des lignes proposées et cliquer sur « add concept» ou « replace concept » pour ajouter ou remplacer un concept dans la vue des mappings sélectionnés. **Il est possible d'avoir plusieurs concepts destinataires pour un même concept source**.
+Avec l’option "Use source term" choisi par défaut, saisisser des mots clés pour votre recherche : USAGI liste des propositions de mapping dans l’encart Results : sélectionner une des lignes proposées et cliquer sur « add concept» ou « replace concept » pour ajouter ou remplacer un concept dans la vue des mappings sélectionnés. **Il est possible d'avoir plusieurs concepts destinataires pour un même concept source**.
 * Une fois les concepts de destination choisis dans la vue **Target concepts**, vous pouvez cliquer sur  ALT + C pour obtenir plus d'information sur le concept (hierarchie). 
 * Tout en bas de la page, valider le mapping en cliquant sur **Approve** ou bien signaler ce mapping comme non approuvé en cliquant sur **Flag**. 
 * L’utilisation des attributs EQUAL, EQUIVALENT, ETC. est optionnelle et ne sert qu’à commenter le fichier de travail (ces attributs n’apparaitront plus dans le fichier final exporté)
