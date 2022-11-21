@@ -115,8 +115,8 @@ NB : Lors de l'export, si un code source a plusieurs codes de destination, il y 
 
 ![usagi23bio.png](images/usagi23bio.png)
 
-* Si aucune proposition ne convient : dans la vue des **mappings sélectionnés**, sélectionner le concept proposé et cliquer sur **Remove Concept** (concept_id prend la valeur 0). Vous pouvez aussi signaler la ligne par un drapeau, ajouter UNMATCHED si besoin (ou autres options utiles pour revenir pluds tard sur ce fichier de travail).
-
+* Si aucune proposition ne convient : dans la vue des **mappings sélectionnés**, sélectionner le concept proposé et cliquer sur **Remove Concept** (concept_id prend la valeur 0). Signaler la ligne par un drapeau, ajouter UNMATCHED (ou autres options utiles pour revenir pluds tard sur ce fichier de travail).
+![usagi20bio.png](images/usagi20bio.png)
 ![usagi24.png](images/usagi24.png)
 
 NB : Penser à mettre à jour l’attribut sur la prochaine ligne
