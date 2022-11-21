@@ -115,13 +115,13 @@ NB : Lors de l'export, si un code source a plusieurs codes de destination, il y 
 
 ![usagi23bio.png](images/usagi23bio.png)
 
-* Si aucune proposition ne convient : signaler la ligne par un drapeau => ne pas approuver, ajouter UNMATCHED si besoin (ou autres options utiles pour ce fichier de travail)
+* Si aucune proposition ne convient : dans la vue des **mappings sélectionnés**, sélectionner le concept proposé et cliquer sur **Remove Concept** (concept_id prend la valeur 0). Vous pouvez aussi signaler la ligne par un drapeau, ajouter UNMATCHED si besoin (ou autres options utiles pour revenir pluds tard sur ce fichier de travail).
 
 ![usagi24.png](images/usagi24.png)
 
-NB : Penser à changer l’attribut sur la prochaine ligne 
+NB : Penser à mettre à jour l’attribut sur la prochaine ligne
 
-*	Il est possible de sauver ce document de travail afin d’y revenir plus tard 
+*	Il est possible de sauver ce document de travail afin d’y revenir plus tard (Dans le menu File, ne pas cliquer sur Export mais sur Save)
 
 ![usagi25.png](images/usagi25.png)
 
@@ -132,9 +132,6 @@ NB : Penser à changer l’attribut sur la prochaine ligne
 
 ![usagi26.png](images/usagi26.png)
 
-* Continuer le mapping : seules les lignes approuvées seront exportées 
-
-NB :  si pour un libellé source, il n’existe pas de correspondance, la ligne est signalée par un drapeau, elle ne sera pas exportée.
 
 ## Export des résultats (à Montpellier, nous n'avons pas utilisé cette option, nous avons utilisé le fichier sauvé au format USAGI)
 
