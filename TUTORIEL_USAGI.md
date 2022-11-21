@@ -136,25 +136,25 @@ NB : Penser à changer l’attribut sur la prochaine ligne
 
 NB :  si pour un libellé source, il n’existe pas de correspondance, la ligne est signalée par un drapeau, elle ne sera pas exportée.
 
-## Export des résultats
+## Export des résultats (à Montpellier, nous n'avons pas utilisé cette option, nous avons utilisé le fichier sauvé au format USAGI)
 
 * Dans le menu File, cliquer sur Export source to concept map
 
 ![usagi29.png](images/usagi29.png)
 
-ATTENTION IMPORTANT : choisir "Only approved" pour n’exporter que le mapping approuvé
+Choisir "Only approved" pour n’exporter que le mapping approuvé
 
 Export for review
 
 ![usagi30.png](images/usagi30.png)
 
 *	Choisir un id pour le vocabulaire :
-L’id doit être court et peut comporter des espaces
+L’id doit être court 
  ex : 
-« Chu Bio » pour la bio
-« Chu Spec » pour le domaine specimen
-« Chu Spec Anat » pour le domaine spec anatomic site
-« Chu Spec Disease » pour le domaine spec disease status
+« mpl_Bio » pour la bio
+« mpl_Spec » pour le domaine specimen
+« mpl_spec_anat » pour le domaine spec anatomic site
+«mpl_spec_disease » pour le domaine spec disease status
 
 ![usagi31.png](images/usagi31.png)
 * Nommer le fichier résultat en précisant le domaine cible :
